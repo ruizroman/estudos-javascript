@@ -1,0 +1,43 @@
+<html>
+    <script>
+        //criar funcao que armazena um numero
+        function verificaNumeroPrimo(numero) {
+
+            var i = 2;
+            while (i < numero) {
+                if (numero % i === 0) {
+                    return false;
+                
+                }
+                i++;
+
+            }
+
+            return true;
+
+
+        }
+
+        function somaNumerosPrimosMenores(numero) {
+
+            soma = 0
+
+            while (numero > 1) {
+                if (verificaNumeroPrimo(numero) === true ) {
+                    soma += numero;
+                
+                }
+                numero--;
+            }
+            return soma;
+
+
+        }
+
+
+
+
+
+
+    </script>
+</html>
